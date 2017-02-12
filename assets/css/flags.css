@@ -1,0 +1,34 @@
+#flags {
+	position: fixed;
+	left: 4%;
+	bottom: 4%;
+	z-index: 999;
+}
+
+#flags ul {
+	padding: 0px;
+	margin: 0%;
+}
+
+#flags li {
+	list-style-type: none;
+	padding-left: 0%;
+	margin: 0%;
+}
+
+#flags a {
+	
+    outline: 0;
+	text-decoration: none;
+}
+
+.flag {
+    display: block;
+    width: 32px;
+    height: 32px;
+    background: url(../images/flags.png) no-repeat;
+}
+
+.flag.flag-fr {background-position: -32px 0}
+.flag.flag-gb {background-position: 0 -32px}
+.flag.flag-jp {background-position: -32px -32px}

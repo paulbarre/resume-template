@@ -1,0 +1,59 @@
+.jumbotron {
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0%;
+}
+
+.jumbotron #title {
+    font-size: 200%;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+}
+
+.jumbotron #subtitle {
+    font-size: 125%;
+    letter-spacing: 8px;
+}
+
+.jumbotron #start {
+    position: absolute;
+    font-size: 200%;
+    left: 50%;
+    bottom: 5%;
+    -webkit-transform: translate(-50%, 0%);
+    transform: translate(-50%, 0%);
+}
+
+.jumbotron #start a {
+    color: white;
+}
+
+.jumbotron #start i {
+    animation-name: start_anim;
+    animation-duration: 1.2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+.jumbotron #start a {
+    outline: 0;
+}
+
+@keyframes start_anim {
+    0% {
+        margin-bottom: 10%;
+    }
+
+    50% {
+        margin-bottom: 50%;
+    }
+
+    100% {
+        margin-bottom: 10%;
+    }
+}

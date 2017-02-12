@@ -1,0 +1,15 @@
+footer {
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+footer #logo-footer {
+    height: 24px;
+}
+
+footer p a.out, a.out:hover {
+	outline: 0;
+	text-decoration: none;
+}

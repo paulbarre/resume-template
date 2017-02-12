@@ -1,1 +1,331 @@
-<h1>Resume template</h1>
+<!--
+# About
+
+A fully responsive template I created and used for my own resume.
+
+Feel free to use, change or do whatever with it. (A link to this page would be appreciated but I leave it to your own judgement).
+
+## Example
+
+Here (https://paulbarre.github.io/resume-template/) is what it looks.
+
+## Credits
+
+This template uses the following:
+
+* jQuery (https://jquery.com/)
+* jQuery UI (http://jqueryui.com/)
+* Bootstrap (http://getbootstrap.com/)
+* Font Awesome (http://fontawesome.io/)
+
+Flags for localization have been generated with Flag Sprites (https://www.flag-sprites.com/).
+
+The library used for internalization is webL10n (https://github.com/fabi1cazenave/webL10n).
+
+ -->
+
+<!doctype html>
+<html>
+    <head>
+    	<title>Resume template</title>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="cache-control" content="max-age=0" />
+        <meta http-equiv="cache-control" content="no-cache" />
+        <meta http-equiv="pragma" content="no-cache" />
+        <meta http-equiv="content-script-type" content="text/javascript" />
+		<meta http-equiv="content-style-type" content="text/css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="application-name" content="mysite.com" />
+        <meta name="author" content="Paul Barré" />
+        <meta name="description" content="Paul Barré's resume template" />
+        <meta name="keywords" content="portfolio,resume,engineer,programmer,designer" />
+        <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="stylesheet" href="assets/css/flags.css" />
+        <link rel="stylesheet" href="assets/css/jumbotron.css" />
+        <link rel="stylesheet" href="assets/css/menu.css" />
+        <link rel="stylesheet" href="assets/css/sections.css" />
+        <link rel="stylesheet" href="assets/css/social.css" />
+        <link rel="stylesheet" href="assets/css/footer.css" />
+        <link rel="stylesheet" href="assets/css/dialog.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="https://use.fontawesome.com/30131c8843.js"></script>
+        <script type="text/javascript" src="assets/js/webL10n/l10n.js"></script>
+        <link rel="prefetch" type="application/l10n" href="assets/l10n/locales.ini" />
+    </head>
+    <body data-spy="scroll" data-target="#menu">
+    	<div id="splash" class="jumbotron heavy_color">
+            <div class="container">
+                <img id="logo-jumbotron" src="assets/images/logo.png" />
+                <h1 id="title" data-l10n-id="Title"></h1>
+                <h2 id="subtitle" data-l10n-id="Subtitle"></h2>
+                <div id="start">
+                	<a href="#me"><i class="fa fa-chevron-down"></i></a>
+            	</div>
+            </div>
+        </div>
+
+        <nav id="menu" class="navbar navbar-inverse">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" id="button-collapse" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <a class="navbar-brand" href="#splash">
+                        <img id="logo-menu" src="assets/images/favicon.png" />
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a data-l10n-id="AboutMe" href="#me"></a></li>
+                        <li><a data-l10n-id="Experience" href="#experience"></a></li>
+                        <li><a data-l10n-id="Education" href="#education"></a></li>
+                        <li><a data-l10n-id="Certifications" href="#certification"></a></li>
+                        <li><a data-l10n-id="Skill" href="#skill"></a></li>
+                        <li><a data-l10n-id="Projects" href="#portfolio"></a></li>
+                        <li><a data-l10n-id="Contact" href="#contact"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div id="flags">
+            <ul>
+                <li><a hreflang="en" class="flag flag-gb lang" href="" data-flag="flag-gb"></a></li>
+                <li><a hreflang="fr" class="flag flag-fr lang" href="" data-flag="flag-fr"></a></li>
+                <li><a hreflang="ja" class="flag flag-jp lang" href="" data-flag="flag-jp"></a></li>
+            </ul>
+        </div>
+
+        <section id="me" class="container section-categories">
+            <div class="row">
+                <h2 class="section-title" data-l10n-id="AboutMe"></h2><hr />
+                <article class="col-xs-12 col-sm-6 col-md-3">
+                    <img class="category-bubble" src="assets/images/profile.png">
+                    <h3 class="category-title" data-l10n-id="DetailsTitle"></h3>
+                    <ul>
+                        <li data-l10n-id="DetailsAge"></li>
+                        <li data-l10n-id="DetailsDrivingLicense"></li>
+                        <li data-l10n-id="DetailsAddress"></li>
+                    </ul>
+                    <ul class="social">
+                        <li><a href="#" target="_blank" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#" target="_blank" class="viadeo"><i class="fa fa-viadeo"></i></a></li>
+                        <li><a href="#" target="_blank" class="github"><i class="fa fa-github"></i></a></li>
+                        <li><a href="#" target="_blank" class="wordpress"><i class="fa fa-wordpress"></i></a></li>
+                    </ul>
+                </article>
+
+                <article class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="category-bubble display-tablet"><i class="fa fa-rocket bubble-content"></i></div>
+                    <h3 class="category-title" data-l10n-id="Quality1Title"></h3>
+                    <p data-l10n-id="Quality1"></p>
+                </article>
+
+                <article class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="category-bubble display-tablet"><i class="fa fa-group bubble-content"></i></div>
+                    <h3 class="category-title" data-l10n-id="Quality2Title"></h3>
+                    <p data-l10n-id="Quality2"></p>
+                </article>
+
+                <article class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="category-bubble display-tablet"><i class="fa fa-coffee bubble-content"></i></div>
+                    <h3 class="category-title" data-l10n-id="Quality3Title"></h3>
+                    <p data-l10n-id="Quality3"></p>
+                </article>
+            </div>
+
+            <div id="row-download" class="row">
+                <article class="col-xs-12">
+                    <button id="btn-resume" data-l10n-id="DownloadResume"></button>
+                </article>
+            </div>
+        </section>
+
+        <div class="light_color">
+	        <section id="experience" class="container section-timeline">
+	            <div class="row">
+	                <h2 class="section-title" data-l10n-id="Experience"></h2><hr />
+	                <div class="col-md-12">
+	                    <div class="timeline">
+                            <article class="period">
+	                            <h3 class="period-title" data-l10n-id="XPTitle"></h3>
+	                            <h4 class="period-details" data-l10n-id="XPDetails"></h4>
+	                            <p data-l10n-id="XPWork"></p>
+
+	                            <h5 class="content-title" data-l10n-id="Technologies"></h5>
+	                            <p data-l10n-id="XPTechnologies"></p>
+	                        </article>
+                            <article class="period">
+	                            <h3 class="period-title" data-l10n-id="XPTitle"></h3>
+	                            <h4 class="period-details" data-l10n-id="XPDetails"></h4>
+	                            <p data-l10n-id="XPWork"></p>
+
+	                            <h5 class="content-title" data-l10n-id="Technologies"></h5>
+	                            <p data-l10n-id="XPTechnologies"></p>
+	                        </article>
+                            <article class="period">
+	                            <h3 class="period-title" data-l10n-id="XPTitle"></h3>
+	                            <h4 class="period-details" data-l10n-id="XPDetails"></h4>
+	                            <p data-l10n-id="XPWork"></p>
+
+	                            <h5 class="content-title" data-l10n-id="Technologies"></h5>
+	                            <p data-l10n-id="XPTechnologies"></p>
+	                        </article>
+	                    </div>
+	                </div>
+	            </div>
+	        </section>
+        </div>
+
+        <section id="education" class="container section-timeline">
+            <div class="row">
+                <h2 class="section-title" data-l10n-id="Education"></h2><hr />
+                <div class="col-md-12">
+                    <div class="timeline">
+                        <article class="period">
+                            <h3 class="period-title" data-l10n-id="EduTitle"></h3>
+                            <h4 class="period-details" data-l10n-id="EduDetails"></h4>
+                            <p data-l10n-id="EduProfile"></p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="light_color">
+            <section id="certification" class="container section-categories">
+                <div class="row">
+                    <h2 class="section-title" data-l10n-id="Certifications"></h2><hr />
+                    <article class="col-xs-12 col-sm-4">
+                        <div class="category-bubble display-tablet"><i class="fa fa-graduation-cap bubble-content"></i></div>
+                        <h3 class="category-title" data-l10n-id="EngineeringTitle"></h3>
+                        <ul>
+                            <li data-l10n-id="FrenchEngineerTitle"></li>
+                        </ul>
+                    </article>
+                    <article class="col-xs-12 col-sm-4">
+                        <div class="category-bubble display-tablet"><span class="flag flag-gb bubble-content"></span></div>
+                        <h3 class="category-title" data-l10n-id="EnglishTitle"></h3>
+                        <ul>
+                            <li data-l10n-id="Toeic"></li>
+                        </ul>
+                    </article>
+                    <article class="col-xs-12 col-sm-4">
+                        <div class="category-bubble display-tablet"><span class="flag flag-jp bubble-content"></span></div>
+                        <h3 class="category-title" data-l10n-id="JapaneseTitle"></h3>
+                        <ul>
+                            <li data-l10n-id="Jlpt"></li>
+                        </ul>
+                    </article>
+                </div>
+            </section>
+        </div>
+
+        <section id="skill" class="container section-categories">
+            <div class="row">
+                <h2 class="section-title" data-l10n-id="Skill"></h2><hr />
+                <article class="col-xs-12 col-sm-4">
+                    <div class="category-bubble display-tablet"><i class="fa fa-file-code-o bubble-content"></i></div>
+                    <h3 class="category-title" data-l10n-id="ProgrammingTitle"></h3>
+                    <p data-l10n-id="Programming"></p>
+                </article>
+
+                <article class="col-xs-12 col-sm-4">
+                    <div class="category-bubble display-tablet"><i class="fa fa-cogs bubble-content"></i></div>
+                    <h3 class="category-title" data-l10n-id="ToolsTitle"></h3>
+                    <p data-l10n-id="Tools"></p>
+                </article>
+
+                <article class="col-xs-12 col-sm-4">
+                    <div class="category-bubble display-tablet"><i class="fa fa-commenting-o bubble-content"></i></div>
+                    <h3 class="category-title" data-l10n-id="LanguagesTitle"></h3>
+                    <ul>
+                        <li data-l10n-id="LanguagesFr"></li>
+                        <li data-l10n-id="LanguagesEn"></li>
+                        <li data-l10n-id="LanguagesJa"></li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <div class="light_color">
+            <section id="portfolio" class="container section-thumbnails">
+                <div class="row">
+                    <h2 class="section-title" data-l10n-id="Projects"></h2><hr />
+                    <div class="col-xs-12 col-md-4 thumb">
+                        <figure>
+                            <img src="assets/images/project1.jpg" />
+                            <figcaption>
+                                <h3 class="category-title" data-l10n-id="ProjectTitle"></h3>
+                                <p class="thumb-details" data-l10n-id="ProjectDetails"></p>
+                                <h4 class="content-title" data-l10n-id="Technologies"></h4>
+                                <p data-l10n-id="ProjectTechnologies"></p>
+                                <a href="#" target="_blank"></a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-xs-12 col-md-4 thumb">
+                        <figure>
+                            <img src="assets/images/project2.jpg" />
+                            <figcaption>
+                                <h3 class="category-title" data-l10n-id="ProjectTitle"></h3>
+                                <p class="thumb-details" data-l10n-id="ProjectDetails"></p>
+                                <h4 class="content-title" data-l10n-id="Technologies"></h4>
+                                <p data-l10n-id="ProjectTechnologies"></p>
+                                <a href="#" target="_blank"></a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-xs-12 col-md-4 thumb">
+                        <figure>
+                            <img src="assets/images/project3.jpg" />
+                            <figcaption>
+                                <h3 class="category-title" data-l10n-id="ProjectTitle"></h3>
+                                <p class="thumb-details" data-l10n-id="ProjectDetails"></p>
+                                <h4 class="content-title" data-l10n-id="Technologies"></h4>
+                                <p data-l10n-id="ProjectTechnologies"></p>
+                                <a href="#" target="_blank"></a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <section id="contact" class="container section-categories">
+            <h2 data-l10n-id="Contact" class="section-title"></h2><hr />
+            
+            <div id="row-contact" class="row">
+                <article class="col-xs-12">
+                    <a id="btn-email" href="mailto:" target="_blank" class="button" data-l10n-id="ContactMe"></a>
+                </article>
+            </div>
+        </section>
+
+        <footer class="heavy_color">
+            <div class="container">
+                <p>© 20XX-20XX François Pignon. All Rights Reserved. Template created by <a href="https://paulbarre.github.io/resume-template/">Paul Barré</a>.</p>
+            </div>
+        </footer>
+
+        <div id="dialog-resume" title="">
+            <h2 class="dialog_title" data-l10n-id="DownloadResume"></h2>
+            <ul>
+                <li><a href="assets/files/en/resume.pdf" download="resume-EN.pdf">English</a></li>
+                <li><a href="assets/files/fr/resume.pdf" download="resume-FR.pdf">Français</a></li>
+                <li><a href="assets/files/ja/resume.pdf" download="resume-JA.pdf">日本語</a></li>
+            </ul>
+        </div>
+
+    	<script src="assets/js/main.js"></script>
+    </body>
+</html>

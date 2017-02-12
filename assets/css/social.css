@@ -1,0 +1,68 @@
+.social li {
+    display: inline-block;
+    font-size: 150%;
+}
+
+.social li a {
+    display: block;
+    width: 36px;
+    height: 36px;
+    border: 1px solid #5d80ff;
+    border-radius: 50%;
+    color: #5d80ff;
+    position: relative;
+    outline: none;
+}
+
+.social li a i {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.social a.linkedin:hover {
+    color: white;
+    border-color: #1E88BD;
+    background-color: #1E88BD;
+}
+
+.social a.viadeo:hover {
+    color: #F07355;
+    border-color: #4A494D;
+    background-color: #4A494D;
+}
+
+.social a.github:hover {
+    color: black;
+    border-color: #848484;
+    background-color: #f5f5f5;
+}
+
+.social a.wordpress:hover {
+    color: white;
+    border-color: #0087BE;
+    background-color: #0087BE;
+}
+
+/* Phones, tablets */
+@media screen
+and (max-width: 991px) {
+    .social a.linkedin {
+        color: white;
+        border-color: #1E88BD;
+        background-color: #1E88BD;
+    }
+
+    .social a.viadeo {
+        color: #F07355;
+        border-color: #4A494D;
+        background-color: #4A494D;
+    }
+
+    .social a.github {
+        color: black;
+        border-color: #848484;
+        background-color: #f5f5f5;
+    }
+}
