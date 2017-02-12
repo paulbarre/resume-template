@@ -55,6 +55,7 @@ function prepareLocalization()
     flag = $('.default-lang').data('flag');
 
     var langCode = l10n.getLanguage().split('-', 1)[0];
+    l10n.setLanguage(langCode);
     $('.lang').on('click', function(e)
     {
         l10n.setLanguage(this.hreflang);
