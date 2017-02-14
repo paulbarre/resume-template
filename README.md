@@ -18,6 +18,7 @@ This template uses the following:
 * [jQuery UI](http://jqueryui.com/)
 * [Bootstrap](http://getbootstrap.com/)
 * [Font Awesome](http://fontawesome.io/)
+* [Lato font](https://fonts.google.com/specimen/Lato)
 
 Flags for localization have been generated with [Flag Sprites](https://www.flag-sprites.com/).
 
